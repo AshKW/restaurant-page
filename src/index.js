@@ -26,16 +26,28 @@ function changePage(name){
     console.log(`${name}`);
     switch(name) {
         case "Home":
-            console.log("its working for home!");
+            displayHome();
             return;
         case "Menu":
-            console.log("menu works as well");
+            displayMenu();
             return;
         case "Contact":
-            console.log("and contact works!!");
+            displayContact();
             return;
     }
 }
 //Call homeTab to display Home Tab by default
 initialisePage();
 
+function clearPage(){
+
+}
+function displayHome(){
+    console.log("now displaying home");
+}
+function displayMenu(){
+    console.log("now displaying menu");
+}
+function displayContact(){
+    console.log("now displaying contact");
+}
